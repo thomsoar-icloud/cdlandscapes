@@ -1,0 +1,8 @@
+{
+  "name": "cdlandscapes",
+  "app_id": "bf32f2b6",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
