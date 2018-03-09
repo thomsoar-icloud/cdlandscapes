@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>Jobs</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="create()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-segment [(ngModel)]="segment" (ionChange)="updateSegment()">
+    <ion-segment-button value="all">
+      All
+    </ion-segment-button>
+    <ion-segment-button value="nearby">
+      Nearby
+    </ion-segment-button>
+    <ion-segment-button value="overdue">
+      Overdue
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic ({{segment}})!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+</ion-content>
